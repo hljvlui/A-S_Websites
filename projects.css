@@ -123,6 +123,18 @@ main {
     border-left: 4px solid var(--primary-color);
 }
 
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -156,3 +168,4 @@ footer {
     padding: 2rem;
     margin-top: 4rem;
 }
+
