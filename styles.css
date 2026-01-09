@@ -1,14 +1,8 @@
-/*FUENTE */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
-
+/* Aquí definimos colores y otros valores que usaremos en toda la página web creando esta variable.*/
 :root {
-    /* Color Palette derived from Logo (Teal/Blue/Dark Blue) */
     --primary-color: #008080;
-    /* Teal */
     --secondary-color: #1a237e;
-    /* Dark Blue */
     --accent-color: #00bcd4;
-    /* Cyan/Light Blue */
     --text-color: #333333;
     --bg-color: #f4f7f6;
     --white: #ffffff;
@@ -17,21 +11,15 @@
     --transition: all 0.3s ease;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Se le añade estilo a el cuerpo de la página en cuanto a la tipografía, el color del fondo, el color del texto y el espacio de interlineado */
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    scroll-behavior: smooth;
 }
 
-/* Sticky Header */
+/* Esto hace que el header se quede estatico */
 header {
     position: sticky;
     top: 0;
@@ -46,6 +34,7 @@ header {
     transition: var(--transition);
 }
 
+/* Agrupa el logo y el nombre de la compañia */
 .logo-container {
     display: flex;
     align-items: center;
@@ -53,13 +42,14 @@ header {
     text-decoration: none;
 }
 
+/* Define el tamaño y cómo se ajusta la imagen del logo. */
 .logo-img {
     height: 50px;
-    /* Adjust based on actual logo aspect ratio */
     width: auto;
     object-fit: contain;
 }
 
+/* Esto es para darle estilo a el nombre de la compañia */
 .company-name {
     font-size: 1.5rem;
     font-weight: 700;
@@ -67,13 +57,14 @@ header {
     letter-spacing: -0.5px;
 }
 
-/* Navigation */
+/* Da estilo al menu del header */
 nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
 
+/* Esto le da una pequeña animación a los links que estan dentro del header */
 nav a {
     text-decoration: none;
     color: var(--text-color);
@@ -83,6 +74,7 @@ nav a {
     position: relative;
 }
 
+/* Crea una línea animada que aparece al pasar el mouse. */
 nav a::after {
     content: '';
     position: absolute;
@@ -94,22 +86,24 @@ nav a::after {
     transition: var(--transition);
 }
 
+/* Cambia el color del texto cuando pasas el mouse sobre él. */
 nav a:hover {
     color: var(--primary-color);
 }
 
+/* Hace que la línea se extienda completamente al pasar el mouse. */
 nav a:hover::after {
     width: 100%;
 }
 
-/* Main Content */
+/* Le da estilo a la parte principal de la página*/
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* Hero Section */
+/* Esto permite que home tenga un fondo degradado y con el texto centrado */
 .hero {
     text-align: center;
     padding: 4rem 1rem;
@@ -119,12 +113,14 @@ main {
     box-shadow: var(--shadow);
 }
 
+/* Esto le da un estilo a los h1 de la sección hero */
 .hero h1 {
     font-size: 3rem;
     color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
+/* Esto le da un estilo a los párrafos de la sección hero */
 .hero p {
     font-size: 1.2rem;
     color: #666;
@@ -132,6 +128,7 @@ main {
     margin: 0 auto 2rem;
 }
 
+/* Esto es una variable para hacer uso de un botón */
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -144,12 +141,13 @@ main {
     box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
 }
 
+/* Cambia el color de fondo y levanta el botón al pasar el mouse. */
 .btn:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
-/* Footer */
+/* Esto le da un estilo al footer de la página */
 footer {
     background-color: var(--secondary-color);
     color: var(--white);
